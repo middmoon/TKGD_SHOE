@@ -47,6 +47,9 @@ async function selectAllAttributes() {
           reject(error);
         } else {
           const data = JSON.parse(JSON.stringify(result));
+          data.sort((a, b) => {
+            a.TenThuocTinhSanPham.localeCompare(b.TenThuocTinhSanPham);
+          });
           resolve(data);
         }
       }
@@ -118,7 +121,8 @@ async function selectProductById(id) {
           reject(error);
         } else {
           const data = JSON.parse(JSON.stringify(result));
-          resolve(data);
+          const collection = data[0].TenBoSuuTap;
+          resolve({ data, collection });
         }
       }
     );
@@ -195,6 +199,65 @@ async function selectQuantitesById(id) {
   });
 }
 
+async function findIdInCollection(id) {
+  const { collection: collection } = await selectProductById(id);
+  return new Promise((resolve, reject) => {
+    pool.query(
+      `SELECT 
+      sanpham.IdSanPham
+      FROM
+        sanpham
+          INNER JOIN
+            bosuutap ON bosuutap.IdBoSuuTap = sanpham.IdBoSuuTap
+      WHERE
+        bosuutap.TenBoSuuTap = "${collection}" and  sanpham.IdSanPham <> "${id}";`,
+      (error, result, fields) => {
+        if (error) {
+          reject(error);
+        } else {
+          const data = JSON.parse(JSON.stringify(result));
+          resolve(data);
+        }
+      }
+    );
+  });
+}
+
+async function findColorInCollection(id) {
+  const data = await findIdInCollection(id);
+  console.log(data);
+  const promises = data.map((item) => {
+    return new Promise((resolve, reject) => {
+      pool.query(
+        `SELECT
+          thuoctinhsanpham_cua_sanpham.IdSanPham,
+          thuoctinhsanpham.TenThuocTinhSanPham,
+          thuoctinhsanpham.GiaTriThuocTinhSanPham
+        FROM
+          thuoctinhsanpham  
+            INNER JOIN
+              thuoctinhsanpham_cua_sanpham ON thuoctinhsanpham_cua_sanpham.IdThuocTinhSanPham = thuoctinhsanpham.IdThuocTinhSanPham
+        WHERE
+          thuoctinhsanpham_cua_sanpham.IdSanPham = '${item.IdSanPham}' and thuoctinhsanpham.TenThuocTinhSanPham  in ("Color_Hex");`,
+        (error, result, fields) => {
+          if (error) {
+            reject(error);
+          } else {
+            let data = JSON.parse(JSON.stringify(result));
+            resolve(data);
+          }
+        }
+      );
+    });
+  });
+
+  const result = await Promise.all(promises);
+  return result;
+}
+
+// selectRelatedCollection
+async function selectRelatedProductLine(id) {}
+
 class Product {
   async getAllProducts() {
     try {
@@ -225,15 +288,18 @@ class Product {
 
   async getProductById(id) {
     try {
-      const SanPham = await selectProductById(id);
+      const { data: SanPham } = await selectProductById(id);
       const ThuocTinh = await selectAttributesById(id);
+      ThuocTinh.sort((a, b) => a.TenThuocTinhSanPham.localeCompare(b.TenThuocTinhSanPham));
       const BoAnh = await selectImagesById(id);
       const TonKho = await selectQuantitesById(id);
+      const MauSanPhamCungBoSuuTap = await findColorInCollection(id);
       return {
         SanPham,
         ThuocTinh: ThuocTinh,
         BoAnh: BoAnh,
         TonKho: TonKho,
+        MauSanPhamCungBoSuuTap: MauSanPhamCungBoSuuTap,
       };
     } catch (error) {
       return { error: error };

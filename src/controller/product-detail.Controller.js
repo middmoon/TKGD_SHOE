@@ -2,10 +2,17 @@ const Product = require("../models/product");
 
 class ProductDetailController {
   async index(req, res) {
-    const data = await Product.getProductById("AV00149");
-    const test = "123";
+    const id = req.params.id;
+    const data = await Product.getProductById(id);
+    console.log(data);
     res.render("product-detail", { data });
   }
+
+  // async index(req, res) {
+  //   const id = req.params.id;
+  //   const data = await Product.getProductById("AV00149");
+  //   res.send(id);
+  // }
 }
 
 module.exports = new ProductDetailController();

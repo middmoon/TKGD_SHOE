@@ -1,5 +1,25 @@
 const pool = require("../configs/database");
 
+async function selectAllCollection() {
+  return new Promise((resolve, reject) => {
+    pool.query(
+      `
+      SELECT 
+        *
+      FROM
+        bosuutap;`,
+      (error, result, fields) => {
+        if (error) {
+          reject(error);
+        } else {
+          const data = JSON.parse(JSON.stringify(result));
+          resolve(data);
+        }
+      }
+    );
+  });
+}
+
 async function selectProductById(id) {
   return new Promise((resolve, reject) => {
     pool.query(
@@ -141,6 +161,15 @@ class Collection {
       });
 
       return data;
+    } catch (error) {
+      return { error: error };
+    }
+  }
+
+  async getAllCollection() {
+    try {
+      const BoSuuTap = selectAllCollection();
+      return BoSuuTap;
     } catch (error) {
       return { error: error };
     }

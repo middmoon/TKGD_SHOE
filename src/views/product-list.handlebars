@@ -1,1 +1,98 @@
-<h1>Product List</h1>
+<body>
+    {{>header}}
+  <div class="prd1-cont container-fluid px-0">
+    <div class="row gx-none">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 prd1-left hidden-xs hidden-sm">
+        <div class="row left-tree">
+          <ul class="nav" style="display: block">
+            <li class="nav-divider"></li>
+            <li class="first-lvl">
+              <button label-default class="accordion tree-toggle nav-header orange">
+                KIỂU DÁNG
+                <span class="caret caret-active"></span>
+              </button>
+              <ul class="panel nav tree" style="display: block">
+                {{#each attributes}}
+                  <li><label>{{GiaTriThuocTinhSanPham}}</label></li>
+                {{/each}}
+              </ul>
+            </li>
+            <li class="nav-divider"></li>
+            <li class="first-lvl">
+              <button label-default class="accordion tree-toggle nav-header orange">
+                DÒNG SẢN PHẨM
+                <span class="caret caret-active"></span>
+              </button>
+              <ul class="panel nav tree" style="display: block">
+                {{#each productLine}}
+                  <li><label>{{TenDongSanPham}}</label></li>
+                {{/each}}
+              </ul>
+            </li>
+            <li class="nav-divider"></li>
+            <li class="first-lvl">
+              <button label-default class="accordion tree-toggle nav-header orange">
+                GIÁ
+                <span class="caret caret-active"></span>
+              </button>
+              <ul class="panel nav tree" style="display: block">
+                <li><label>500k - 599k</label></li>
+                <li><label>400k - 499k</label></li>
+                <li><label>300k - 399k</label></li>
+              </ul>
+            </li>
+            <li class="nav-divider"></li>
+            <li class="first-lvl">
+              <button label-default class="accordion tree-toggle nav-header orange">
+                BỘ SƯU TẬP
+                <span class="caret caret-active"></span>
+              </button>
+              <ul class="panel nav tree" style="display: block">
+
+                {{#each collection}}
+                  <li><label>{{TenBoSuuTap}}</label></li>
+                {{/each}}
+              </ul>
+            </li>
+            <li class="nav-divider"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 prd1-right">
+        <div class="row gx-0 prd1-right-box hidden-xs hidden-sm">
+          <img src="/image/assests/Desktop_Homepage_Banner.jpg" alt="" style="vertical-align: middle" />
+        </div>
+
+        <div class="row gx-0 prd1-right-items">
+          {{!-- {{#if @index % 3 === 0}}
+            <div class="item-break"></div>
+          {{/if}} --}}
+          {{#each productList}}
+            <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4 item">
+              <div class="thumbnail">
+                <div class="cont-item">
+                  <a href="/product-detail/{{IdSanPham}}">
+                    <img class="inormal" src="/image/product/{{TenDongSanPham}}/{{TenBoSuuTap}}/{{IdSanPham}}/{{BoAnh.0.Anh}}" alt="" />
+                    <img class="ihover" src="/image/product/{{TenDongSanPham}}/{{TenBoSuuTap}}/{{IdSanPham}}/{{BoAnh.1.Anh}}" alt="" />
+                  </a>
+                </div>
+                <div class="button">
+                  <a class="btn btn-prd1-buynow hidden-xs hidden-sm" href="">MUA NGAY</a>
+                  <a class="addToWishList btn btn-prd1-heart" href=""></a>
+                </div>
+                <div class="caption">
+                  <h3 class="name">{{TenDongSanPham}} {{TenBoSuuTap}} - {{ThuocTinh.5.GiaTriThuocTinhSanPham}}</h3>
+                  <h3 class="color">{{GiaTriThuocTinhSanPham}}</h3>
+
+                  <h3 class="price">{{Gia}} VND</h3>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+    {{>footer}}
+  <script src="/js/product-list.js"></script>
+</body>

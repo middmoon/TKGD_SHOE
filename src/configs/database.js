@@ -7,4 +7,11 @@ const pool = mysql.createPool({
   database: "shoe",
 });
 
+// const pool = mysql.createPool({
+//   host: "103.200.23.139",
+//   user: "middmoon_test1",
+//   password: "@M@gj]kiCD9n",
+//   database: "middmoon_ShoeStore",
+// });
+
 module.exports = pool;

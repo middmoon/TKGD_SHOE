@@ -1,4 +1,6 @@
-<h1>Product Detail</h1>
+    {{>header}}
+  
+{{!-- <h1>Product Detail</h1>
 <!-- Anh -->
 <div class="row container-row">
   <div class="col container-col">
@@ -152,7 +154,8 @@
                 <h6>
                   <p>
                     <!-- atttribute -->
-                    Giới tính: Unisex<br />
+                    Giới tính:
+                    <br />
                     Form dáng: Regular<br />
                     Chất liệu: Single Jersey, định lượng 220GSM<br />
                     Thành phần chất liệu: 100% Cotton<br />
@@ -218,4 +221,192 @@
       </div>
     </div>
   </div>
+</div> --}}
+
+<div class="container pt-2">
+  <div class="row container-row">
+    <div class="col container-col">
+      <img
+        class="col-img"
+        src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}"
+        alt=""
+      />
+      <div class="mini-image row py-2">
+        <div class="col">
+          <div id="carouselExampleControls" class="carousel slide d-flex" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active d-flex">
+                <a href=""><img
+                    src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.1.Anh}}"
+                    class="d-block"
+                    style="max-width: 141px;"
+                    alt="..."
+                  /></a>
+                <a href=""><img
+                    src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.2.Anh}}"
+                    class="d-block"
+                    style="max-width: 141px;"
+                    alt="..."
+                  /></a>
+                <a href=""><img
+                    src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.3.Anh}}"
+                    class="d-block"
+                    style="max-width: 141px;"
+                    alt="..."
+                  /></a>
+                <a href=""><img
+                    src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.4.Anh}}"
+                    class="d-block"
+                    style="max-width: 141px;"
+                    alt="..."
+                  /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col container-row">
+      <h1>ANANAS "COPY" STORE BAG 002 - CAVIAR BLACK</h1>
+      <div class="Msp pt-3">
+        <div class="row">
+          <div class="col">
+            <h6>Mã số : {{data.SanPham.0.IdSanPham}}</h6>
+          </div>
+        </div>
+      </div>
+      <div class="gia pt-3" style="color: #f15e2c">
+        <div class="row">
+          <div class="col">
+            <h3>{{data.SanPham.0.Gia}} VND</h3>
+          </div>
+        </div>
+        <div class="sec">
+          <hr class="dashed" style="background-color: black;" />
+        </div>
+        <div class="color d-flex flex-row bd-highlight mb-3 py-3">
+          {{#each data.MauSanPhamCungBoSuuTap}}
+            {{#each this}}
+              <a href="/product-detail/{{IdSanPham}}" style="height: 20px; weight: 20px; background-color: {{GiaTriThuocTinhSanPham}}">1234</a>
+            {{/each}}
+
+          {{/each}}
+        </div>
+        <hr class="dashed" style="background-color: black;" />
+        <div class="luachon">
+          <div class="row">
+            <div class="size col" style="font-size: 2rem;">
+              <h5>SIZE
+                <select id="pickSize" data-style="btn" data-productid="924648">
+                  <option selected="">&nbsp;</option>
+                  {{#each data.TonKho}}
+                    <option>{{KichCo}}</option>
+                  {{/each}}
+                </select></h5>
+
+            </div>
+            <div class="sl col" style="font-size: 2rem;">
+              <h5>Số Lượng
+                <select id="pickSize" data-style="btn" data-action="https://ananas.vn/wp-admin/admin-ajax.php" data-productid="924648">
+                  <option selected="">&nbsp;</option><option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select></h5>
+            </div>
+          </div>
+        </div>
+        <hr class="dashed d-flex" style="background-color: black;" />
+        <div class="add row grp-btn1 py-1">
+          <button type="button" class="btn btn-primary">Thêm Vào Giỏ Hàng</button>
+        </div>
+        <div class="buy row grp-btn1 py-1">
+          <button type="button" class="btn btn-primary">Mua Ngay</button>
+        </div>
+        <hr class="dashed d-flex" style="background-color: black;" />
+        <div class="thongtin">
+          <div class="row grp-btn1 py-1" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  THÔNG TIN SẢN PHẨM
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  <h6><p>Giới tính: Unisex<br />
+                      Form dáng: Regular<br />
+                      Chất liệu: Single Jersey, định lượng 220GSM<br />
+                      Thành phần chất liệu: 100% Cotton<br />
+                      Size: S – M – L – XL<br />
+                      Hoạ tiết: Logos Packed<br />
+                      Sử dụng phương pháp in lụa.</p>
+                  </h6>
+                  <img src="/Img/Ananas_SizeChart2-04.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  QUY ĐỊNH ĐỔI SẢN PHẨM
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">Đối với những sản phẩm giày và thời trang thuộc phiên bản giới hạn. Vì nhiều lý do chúng tôi sẽ không áp
+                  dụng chính sách đổi hàng. Vui lòng cân nhắc kỹ trước khi quyết định mua.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  BẢO HÀNH THẾ NÀO
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">Đối với các sản phẩm thuộc nhóm phụ kiện, chính sách bảo hành không được áp dụng. Mong bạn thông cảm.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+  {{>footer}}
