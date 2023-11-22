@@ -225,7 +225,6 @@ async function findIdInCollection(id) {
 
 async function findColorInCollection(id) {
   const data = await findIdInCollection(id);
-  console.log(data);
   const promises = data.map((item) => {
     return new Promise((resolve, reject) => {
       pool.query(

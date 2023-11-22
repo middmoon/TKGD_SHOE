@@ -4,7 +4,6 @@ class ProductDetailController {
   async index(req, res) {
     const id = req.params.id;
     const data = await Product.getProductById(id);
-    console.log(data);
     res.render("product-detail", { data });
   }
 
