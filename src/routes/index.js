@@ -7,6 +7,7 @@ function routes(app) {
   app.use("/api", apiRoute);
   app.use("/product-detail", productDetailRoute);
   app.use("/product-list", productListRoute);
+  app.use("/new", productListRoute);
   app.use("/", homeRoute);
 }
 
