@@ -21,6 +21,7 @@ git push origin ten_branch
 
 # chạy server
 npm install
+
 npm run start
 
 # lưu ý tắt mọi port 3000 liên quan trong localhost thì mới chạy được
