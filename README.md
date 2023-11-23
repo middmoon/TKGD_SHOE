@@ -13,7 +13,7 @@ git checkout ten_branch
 # day code len
 git add .
 
-git commnit -m"message"
+git commit -m"message"
 
 git push origin ten_branch
 
