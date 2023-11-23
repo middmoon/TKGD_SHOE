@@ -12,7 +12,9 @@ git checkout ten_branch
 
 # day code len
 git add .
+
 git commnit -m"message"
+
 git push origin ten_branch
 
 # nhớ check branch đừng để lộn
