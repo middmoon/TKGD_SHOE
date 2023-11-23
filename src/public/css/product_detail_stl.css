@@ -4,11 +4,12 @@
   text-align: center;
 }
 
+
+
 .card-slider {
   max-width: 1260px;
   margin: 0 auto;
   padding-top: 50px;
-  height: 500px;
 
 }
 @media screen and (max-width: 1024px) {
