@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--bs-font-sans-serif);
+}
+:root{
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.news-detail-title {
+    max-width: 800px;
+    padding: 40px 0px 40px 0px;
+}
+.news-detail-title .title {
+    font-weight: 700;
+    font-size: 72px;
+    color: #000;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.news-detail-title .title-1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 0px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.divider-1{
+    background-color: #fff;
+    background: url(../img/sneakerfess/bg_divider.png) repeat-x 7px;
+    height: 1px;
+    margin-bottom: 0px;
+    padding: none; 
+}
+
+.news-detail-cont {
+    max-width: 800px;
+    padding: 0px 0px 0px 0px;
+
+    font-size: 16px;
+    color: #000;
+    position: relative;
+}
+
+.news-detail-cont img, .news-detail-cont-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news-detail-cont .img-style-1, .news-detail-cont .img-style-2, .news-detail-cont .img-style-3 {
+    overflow: hidden;
+    position: relative;
+}
+
+.news-detail-cont .img-style-2 .note, .news-detail-cont .img-style-3 .note {
+    
+    font-size: 12px;
+    color: #6d6e71;
+}
+.news-detail-cont .img-style-3 .img-left1, .news-detail-cont .img-style-3 .img-right1 {
+    margin-bottom: 20px;
+}
+.news-detail-cont .img-style-3 .img-left1 {
+    width: 390px;
+    height: 390px;
+}
+.news-detail-cont .style-8 .video-left, .news-detail-cont .img-style-6 .img-left, .news-detail-cont .img-style-3 .img-left1, .news-detail-cont .img-style-3 .img-left2, .news-detail-cont .img-style-2 .img-left, .news-detail-cont .img-style-2 .cont-left, .news-detail-cont .img-style-1 .left {
+    float: left;
+    overflow: hidden;
+}
+.news-detail-cont .img-style-3 .img-left1, .news-detail-cont .img-style-3 .img-right1 {
+    margin-bottom: 20px;
+}
+.news-detail-cont .style-8 .cont-right, .news-detail-cont .img-style-6 .img-right, .news-detail-cont .img-style-3 .img-right1, .news-detail-cont .img-style-3 .img-right2, .news-detail-cont .img-style-2 .img-right, .news-detail-cont .img-style-2 .cont-right, .news-detail-cont .img-style-1 .right {
+    float: right;
+    overflow: hidden;
+}
+.news-detail-cont .img-style-3 .img-right1 {
+    width: 390px;
+    height: 390px;
+}
+
+.news-detail-date .title-2 {
+
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 0px;
+    text-align: center;
+    line-height: 1.4em;
+    margin: 30px 0px;
+    letter-spacing: 0.1em; 
+     text-transform: uppercase;
+}
+.news-detail-date {
+    max-width: 800px;
+    padding: 0px 0px 0px 0px;
+}
+
+.news-detail-cont .img-style-6 .img-full {
+    width: 800px;
+    height: 440px;
+    overflow: hidden;
+}
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.home-news {
+    max-width: 1200px;
+    padding: 40px 0px 30px 0px;
+}
+
+.home-news .title {
+    justify-content: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+.home-news .post-item a{
+    display: block;
+    color: #000;
+}
+
+.home-news .post-item img{
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+}
+
+.home-news .post-item .post-title{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 23px;
+    color: #000;
+  
+}
+.home-news .post-item .post-title a{
+    transition:0.3s ease-in-out;
+}
+.home-news .post-item .post-title a:hover{
+    color: #f15e2c;
+    transition:0.3s ease-in-out;
+}
+
+.home-news .post-item .post-des{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    display: block;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 5.6em;
+    line-height: 1.4em;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.home-news .post-item .post-detail a{
+    font-size: 16px;
+    color: #f15e2c;
+    line-height: 1.4em;
+    text-decoration: none;
+}
