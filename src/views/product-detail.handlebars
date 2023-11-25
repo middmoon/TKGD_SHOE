@@ -63,9 +63,17 @@
                 
                 <div class="color">
                     <ul class="nav tree">
-                        <li class="cb-color-fixed">
-                            <label data-link=""><span class="bg-color" style="background-color: #000000;"></span><input name="cbColor" type="checkbox" value="0" hidden=""></label>
-                        </li>
+                        {{#each data.MauSanPhamCungBoSuuTap}}
+                            <a href="/product-detail/{{this.0.IdSanPham}}">
+                            <li class="cb-color-fixed">
+                            <label data-link=""><span class="bg-color" style="background-color: {{this.0.GiaTriThuocTinhSanPham}};"></span>
+                            <input name="cbColor" type="checkbox" value="0" hidden="">
+                            </label>
+                            </li>
+                            </a>
+                      
+                        {{/each}}
+                        
                     </ul>
                 </div>
                 <hr class="dashed" style="background-color: black; height: 1px;">
