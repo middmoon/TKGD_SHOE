@@ -254,6 +254,10 @@ async function findColorInCollection(id) {
   return result;
 }
 
+async function sortByIndex(){
+
+}
+
 // selectRelatedCollection
 async function selectRelatedProductLine(id) {}
 
