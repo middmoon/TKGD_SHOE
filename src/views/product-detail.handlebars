@@ -1,5 +1,6 @@
 {{>header}}
 <head>
+<<<<<<< HEAD
   <link rel="stylesheet" href="">
 </head>
 
@@ -135,58 +136,505 @@
                       Sử dụng phương pháp in lụa.</p>
                   </h6>
                   <img src="/Img/Ananas_SizeChart2-04.jpg" alt="" />
+=======
+    <link rel="stylesheet" href="/css/product_detail_ct.css">
+    <link rel="stylesheet" href="/css/product_detail_btm.css">
+    <link rel="stylesheet" href="/css/product_detail_bsm.css">
+    <link rel="stylesheet" href="/css/product_detail_sl.css">
+    <link rel="stylesheet" href="/css/product_detail_stl.css">
+    <link rel="stylesheet" href="/css/product_detail_slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https:////cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+    
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src="/js/bm.js"></script>
+    <script src="/js/stl.js"></script>
+    <script src="/js/bsm.js"></script>
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js'></script>
+
+
+
+</head>
+
+<div class="prd-detail container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 hidden-xs hidden-sm">
+            <ol class="breadcrumb">
+                <li><a href=""></a></li>
+                <li><a href="">{{data.SanPham.0.TenDongSanPham}}</a></li>
+                <li><a href="">{{data.SanPham.0.TenDongSanPham}}</a></li>
+                <li class="active">{{data.SanPham.0.TenBoSuuTap}} - {{data.ThuocTinh.4.GiaTriThuocTinhSanPham}} - {{data.ThuocTinh.0.GiaTriThuocTinhSanPham}}</li>
+            </ol>
+        </div>
+    
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+            <div class="wrapper-slide">
+                <div class="prd-detail-main-img">
+                    <img class="main-img" src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}">
+                </div>
+                <div class="prd-detail-slide1 slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1338px; transform: translate3d(0px, 0px, 0px);"><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 223px;"><div><div class="thumbnail" style="width: 100%; display: inline-block;">
+                            <div class="cont-item"><img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.4.Anh}}" data-img-normal="https://ananas.vn/wp-content/uploads/Pro_AV00149_1.jpg" data-img-large="https://ananas.vn/wp-content/uploads/Pro_AV00149_1.jpg"></div>
+                            </div></div></div><div class="slick-slide slick-active" data-slick-index="1" aria-hidden="false" style="width: 223px;"><div><div class="thumbnail" style="width: 100%; display: inline-block;">
+                                <div class="cont-item"><img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.2.Anh}}" data-img-normal="https://ananas.vn/wp-content/uploads/Pro_AV00149_2.jpg" data-img-large="https://ananas.vn/wp-content/uploads/Pro_AV00149_2.jpg"></div>
+                            </div></div></div><div class="slick-slide slick-active" data-slick-index="2" aria-hidden="false" style="width: 223px;"><div><div class="thumbnail" style="width: 100%; display: inline-block;">
+                                <div class="cont-item"><img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.3.Anh}}" data-img-normal="https://ananas.vn/wp-content/uploads/Pro_AV00149_3.jpg" data-img-large="https://ananas.vn/wp-content/uploads/Pro_AV00149_3.jpg"></div>
+                            </div></div></div><div class="slick-slide slick-active" data-slick-index="3" aria-hidden="false" style="width: 223px;"><div><div class="thumbnail" style="width: 100%; display: inline-block;">
+                                <div class="cont-item"><img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.1.Anh}}" data-img-normal="https://ananas.vn/wp-content/uploads/Pro_AV00149_6.jpg" data-img-large="https://ananas.vn/wp-content/uploads/Pro_AV00149_6.jpg"></div>
+                            </div></div></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row prd-detail-img hidden-xs hidden-sm"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 prd-detail-right">
+                <h4>{{data.SanPham.0.TenDongSanPham}} - {{data.SanPham.0.TenBoSuuTap}} - {{data.ThuocTinh.4.GiaTriThuocTinhSanPham}} - {{data.ThuocTinh.0.GiaTriThuocTinhSanPham}}</h4>
+                <h6 class="detail1">
+                    <input type="hidden" id="productId" value="695519">
+                    <span>Mã số :</span> <span class="pull-left">{{data.SanPham.0.IdSanPham}}</span> 
+                </h6>
+                <h5 class="detail1"><span class="saleprice">{{data.SanPham.0.Gia}} VND</span></h5>
+                
+                <hr class="dashed" style="background-color: black; height: 0.9px;">
+                
+                <div class="color">
+                    <ul class="nav tree">
+                        {{#each data.MauSanPhamCungBoSuuTap}}
+                            <a href="/product-detail/{{this.0.IdSanPham}}">
+                            <li class="cb-color-fixed">
+                            <label data-link=""><span class="bg-color" style="background-color: {{this.0.GiaTriThuocTinhSanPham}};"></span>
+                            <input name="cbColor" type="checkbox" value="0" hidden="">
+                            </label>
+                            </li>
+                            </a>
+                      
+                        {{/each}}
+                        
+                    </ul>
+                </div>
+                <hr class="dashed" style="background-color: black; height: 1px;">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <h5>SIZE</h5>
+                            <select id="pickSize" class="selectpicker bs-select-hidden" data-style="btn" data-action="https://ananas.vn/wp-admin/admin-ajax.php" data-productid="695519">
+                            <option selected="">&nbsp;</option>
+                                                       {{#each data.TonKho}}
+                                                          <option>{{KichCo}}</option>
+                                                        {{/each}}
+                            </select><div><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li data-original-index="0" class="selected"><a tabindex="0"data-tokens="null"><span class="text">&nbsp;</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" data-tokens="null"><span class="text">35</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" data-tokens="null"><span class="text">36</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" data-tokens="null"><span class="text">36.5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" data-tokens="null"><span class="text">37</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" data-tokens="null"><span class="text">38</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" data-tokens="null"><span class="text">38.5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" data-tokens="null"><span class="text">39</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" data-tokens="null"><span class="text">40</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" data-tokens="null"><span class="text">40.5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" data-tokens="null"><span class="text">41</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="11"><a tabindex="0" data-tokens="null"><span class="text">42</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="12"><a tabindex="0" data-tokens="null"><span class="text">42.5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="13"><a tabindex="0" data-tokens="null"><span class="text">43</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="14"><a tabindex="0" data-tokens="null"><span class="text">44</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="15"><a tabindex="0" data-tokens="null"><span class="text">44.5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="16"><a tabindex="0" data-tokens="null"><span class="text">45</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="17"><a tabindex="0" data-tokens="null"><span class="text">46</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <h5>SỐ LƯỢNG</h5>
+                        <select id="pickQuantity" class="selectpicker quantity bs-select-hidden" data-style="btn">
+                            <option selected="">&nbsp;</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select><div ><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li data-original-index="0" class="selected"><a tabindex="0" data-tokens="null"><span class="text">&nbsp;</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" data-tokens="null"><span class="text">1</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0"  data-tokens="null"><span class="text">2</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0"  data-tokens="null"><span class="text">3</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" data-tokens="null"><span class="text">4</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" data-tokens="null"><span class="text">5</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" data-tokens="null"><span class="text">6</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" data-tokens="null"><span class="text">7</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="8"><a tabindex="0" data-tokens="null"><span class="text">8</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="9"><a tabindex="0" data-tokens="null"><span class="text">9</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="10"><a tabindex="0" data-tokens="null"><span class="text">10</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="11"><a tabindex="0" data-tokens="null"><span class="text">11</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="12"><a tabindex="0" data-tokens="null"><span class="text">12</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+                    </div>
+                </div>
+                
+                <div class="row grp-btn1">
+                    <a class="btn btn-addcart">THÊM VÀO GIỎ HÀNG</a>
+                </div>
+                <div class="row">
+                    <a class="btn btn-checkout">THANH TOÁN</a>
+>>>>>>> 2b2c28e9ff2def6b3427fec1877dcad0f0142191
                 </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseTwo"
-                >
-                  QUY ĐỊNH ĐỔI SẢN PHẨM
-                </button>
-              </h2>
-              <div
-                id="flush-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingTwo"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">Đối với những sản phẩm giày và thời trang thuộc phiên bản giới hạn. Vì nhiều lý do chúng tôi sẽ không áp
-                  dụng chính sách đổi hàng. Vui lòng cân nhắc kỹ trước khi quyết định mua.</div>
+              <hr class="dashed" style="background-color: black; height: 2px;">
+          </div>
+          
+          {{!--  --}}
+          <div class="title-card-slider">
+            <h1>SẢN PHẨM TƯƠNG TỰ</h1>
+          </div>
+
+          <div class="card-slider">
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#flush-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="flush-collapseThree"
-                >
-                  BẢO HÀNH THẾ NÀO
-                </button>
-              </h2>
-              <div
-                id="flush-collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="flush-headingThree"
-                data-bs-parent="#accordionFlushExample"
-              >
-                <div class="accordion-body">Đối với các sản phẩm thuộc nhóm phụ kiện, chính sách bảo hành không được áp dụng. Mong bạn thông cảm.</div>
+            
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
               </div>
             </div>
           </div>
-        </div>
+          <hr class="dashed" style="background-color: black; height: 1px;">
+          <div class="title-card-slider">
+            <h1>SẢN PHẨM ĐÃ XEM</h1>
+          </div>
+
+          <div class="card-slider">
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+            
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <a href="" target="_blank" class="main-link">
+                <h2 class="title">Blank Shoelaces</h2>
+          
+                <div class="image">
+                  <img src="/image/product/{{data.SanPham.0.TenDongSanPham}}/{{data.SanPham.0.TenBoSuuTap}}/{{data.SanPham.0.IdSanPham}}/{{data.BoAnh.0.Anh}}" alt="Small succulent with long, spikey leaves in a mug-like planter.">
+                </div>
+              </a>
+          
+              <p class="description">Black</p>
+          
+              <div class="badge">Limited</div>
+          
+              <div class="price">
+                <span class="new-price">35.000 VND</span>
+              </div>
+            </div>
+          </div>
       </div>
+<<<<<<< HEAD
     </div>
   </div>
 </div>
+=======
+      <hr class="dashed" style="background-color: black; height: 2px;">
+
+>>>>>>> 2b2c28e9ff2def6b3427fec1877dcad0f0142191
 {{>footer}}

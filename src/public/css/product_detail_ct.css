@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet');
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-weight: normal;
+  color: #000;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+.prd-detail-img {
+  margin-left: 0px;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.prd1-right-items {
+  margin-left: -20px;
+  margin-right: -20px;
+  min-height: 200px;
+}
+.prd1-right-items {
+  clear: both;
+}
+
+.prd-detail-slide {
+  display: inline-block;
+  padding: 0px 10px;
+  margin-bottom: 0px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: none;
+  border-radius: 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.prd1-right-items {
+  display: inline-block;
+  padding: 0px;
+  margin-bottom: 0px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: none;
+  border-radius: 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.prd-detail-slide1 .cont-item,
+.prd-detail-slide .cont-item,
+.prd-detail-img .cont-item,
+.prd1-right-items .cont-item {
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+  position: relative;
+}
+.prd1-right-items .cont-item {
+  padding-top: 55%;
+}
+.prd-detail-slide .cont-item {
+  margin-bottom: 15px;
+}
+.prd-detail-img .cont-item img,
+.prd1-right-items .cont-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.prd-detail-slide1 .cont-item img,
+.prd-detail-slide .cont-item img,
+.prd-detail-img .cont-item img,
+.prd1-right-items .cont-item img,
+.prd1-right-items .cont-item.post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.prd-detail {
+  max-width: 1200px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.prd-detail .breadcrumb {
+  background: transparent;
+  border-bottom: #000 3px solid;
+  border-radius: 0px;
+  padding: 8px 15px 8px 0px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.prd-detail .breadcrumb>.active {
+  color: #000;
+  font-weight: bold;
+}
+.prd-detail .breadcrumb li a:active,
+.prd-detail .breadcrumb li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+
+.prd-detail .wrapper-slide {
+  margin-right: 40px;
+  overflow: hidden;
+}
+
+.prd-detail .prd-detail-main-img {
+  margin-bottom: 20px;
+  position: relative;
+}
+.prd-detail .prd-detail-main-img .main-img{
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+h4,
+.prd-detail-right h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.4em;
+  font-weight: 600;
+}
+ h6,
+.prd-detail-right h6 {
+  font-size: 16px;
+  line-height: 1.4em;
+  clear: both;
+  overflow: hidden;
+}
+.prd-detail-right h5.detail1,
+.prd-detail-right h6.detail1 {
+  margin: 30px 0px 30px 0px;
+}
+.prd-detail-right h5{
+  font-size: 23px;
+  margin-top: 10px;
+}
+.prd-detail-right h5 .saleprice {
+  color: #f15e2c;
+}
+.prd-detail-right h5 .realprice {
+  color: #808080;
+  font-size: 16px;
+  text-decoration: line-through;
+  margin-left:20px;
+}
+ .divider-1,
+.prd-detail-right .divider-1 {
+  margin: 0px 0px;
+  background-color: #fff;
+  background: url(../images/bg_divider.png) repeat-x 7px;
+  height: 2px;
+}
+.prd-detail-right .divider-2 {
+  margin: 0px 0px;
+  border-top: #000 3px solid;
+  display: none;
+}
+.prd-detail-right .color {
+  margin-top: 25px;
+}
+.prd-detail-right .cb-color-fixed label {
+  padding: 3px 0px 0px 3px;
+  width: 40px;
+  height: 40px;
+  border: #fff 2px solid;
+  margin-bottom: 3px;
+  cursor: pointer;
+}
+.prd-detail-right .cb-color-checked {
+  border: #000 2px solid !important;
+}
+.prd-detail-right .cb-color-fixed .bg-color {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 999;
+  display: block;
+  border:#e1e1e1 1px solid;
+}
+
+.prd-detail-right .bootstrap-select button,
+.prd-detail-right .bootstrap-select .dropdown-menu {
+  border-radius: 0px;
+  background-color: #fff;
+  border: #000000 1px solid;
+  font-size: 16px;
+}
+.prd-detail-right .bootstrap-select.btn-group .dropdown-menu li {
+  float : left;
+  border:#020202 1px solid;
+  margin-left: -1px;
+  margin-bottom: -1px;
+}
+.prd-detail-right .bootstrap-select.btn-group .dropdown-menu li a span.text {
+  font-size: 16px;
+}
+.prd-detail-right .bootstrap-select.btn-group .dropdown-menu li.selected {
+  background-color: #f1f1f1;
+}
+.prd-detail-right .bootstrap-select.btn-group .dropdown-menu li:first-child {
+  display: none;
+}
+.prd-detail-right .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+  display: none;
+}
+.prd-detail-right .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {
+  margin-right: 0px;
+  font-size: 16px;
+}
+.prd-detail-right .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.text {
+  font-size: 16px;
+}
+.prd-detail-right .dropdown-menu>li>a {
+  display: block;
+  padding: 14px 0px 0px 0px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.dropdown-menu>.disabled>a,
+.dropdown-menu>.disabled>a:hover,
+.dropdown-menu>.disabled>a:focus {
+  color: #ccc;
+}
+.prd-detail-right .bootstrap-select.btn-group .dropdown-menu.inner {
+  padding-left: 6px;
+  overflow: unset !important;
+}
+.prd-detail-right .btn-like,
+.prd-detail-right .btn-addcart,
+.prd-detail-right .btn-checkout {
+  background-color: #f15e2c;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 23px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px 0px;
+  display: block;
+}
+.prd-detail-right .btn-addcart {
+  background-color: #000;
+
+}
+
+.prd-detail-right .grp-btn1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.prd-detail-right  {
+  margin-bottom: 0px;
+}
+
+  .panel .panel-heading a:active,
+  .panel .panel-heading a,
+.prd-detail-right  .panel .panel-heading a:active,
+.prd-detail-right  .panel .panel-heading a {
+  font-size: 23px;
+  text-decoration: unset;
+  color: #f15e2c;
+}
+  .panel .panel-heading a.collapsed,
+.prd-detail-right  .panel .panel-heading a.collapsed {
+  color: #000;
+}
+.color ul
+{
+  list-style: none;
+}
+.pull-left
+{
+  font-weight: 600;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */

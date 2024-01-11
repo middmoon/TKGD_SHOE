@@ -1,8 +1,7 @@
 class vintasNewController {
-    index(req, res) {
-      res.render("vintas-new");
-    }
+  index(req, res) {
+    res.render("vintas-new");
   }
-  
-  module.exports = new vintasNewController();
-  
+}
+
+module.exports = new vintasNewController();
